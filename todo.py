@@ -2,7 +2,6 @@ from bottle import Bottle ,redirect, get, debug, run, template, request, abort
 from bottle.ext.mongo import MongoPlugin
 
 from bson.objectid import ObjectId
-from bson.json_util import dumps
 
 app = Bottle()
 plugin = MongoPlugin(uri="mongodb://127.0.0.1", db="tododb", json_mongo=True)
